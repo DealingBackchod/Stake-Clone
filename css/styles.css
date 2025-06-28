@@ -1,0 +1,36 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+.header, .game, .auth-box {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+  justify-content: center;
+}
+.tile {
+  width: 60px;
+  height: 60px;
+  background: #334155;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.tile.clicked { background: #10b981; }
+.tile.mine { background: #ef4444; }
